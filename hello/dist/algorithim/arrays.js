@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class ArraysEx {
     constructor() {
         this.age = [2, 6, 3, 8, 7, 4, 5];
@@ -22,4 +21,3 @@ class ArraysEx {
         this.sortAscending(this.age);
     }
 }
-exports.ArraysEx = ArraysEx;
