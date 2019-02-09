@@ -22,5 +22,8 @@
     "bugs": {
         "url": "https://github.com/jjayaraman/typescript/issues"
     },
-    "homepage": "https://github.com/jjayaraman/typescript#readme"
+    "homepage": "https://github.com/jjayaraman/typescript#readme",
+    "dependencies": {
+        "tsc": "^1.20150623.0"
+    }
 }
