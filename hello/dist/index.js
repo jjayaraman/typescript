@@ -1,24 +1,35 @@
 "use strict";
-var ArraysEx = /** @class */ (function () {
-    function ArraysEx() {
-        this.age = [2, 6, 3, 8, 7, 4, 5];
-    }
-    ArraysEx.prototype.sortAscending = function (array) {
-        for (var i = 0; i < array.length; i++) {
-            for (var j = i + 1; j < array.length; j++)
-                if (array[i] < array[j]) {
-                    var temp = array[i];
+/**
+ * Arrays algorithims
+ *
+ *
+ */
+class ArraysEx {
+    sortAscending(array) {
+        for (let i = 0; i < array.length; i++) {
+            for (let j = i + 1; j < array.length; j++)
+                if (array[i] > array[j]) {
+                    let temp = array[i];
                     array[i] = array[j];
                     array[j] = temp;
                 }
         }
-    };
-    ArraysEx.prototype.hello = function () {
-        console.log("hello...");
-    };
-    ArraysEx.prototype.sortAge = function () {
-        console.log("test..");
-        this.sortAscending(this.age);
-    };
-    return ArraysEx;
-}());
+        return array;
+    }
+    sortDescending(array) {
+        for (let i = 0; i < array.length; i++) {
+            for (let j = i + 1; j < array.length; j++)
+                if (array[i] < array[j]) {
+                    let temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+        }
+        return array;
+    }
+    hello() {
+        console.log('hello..');
+    }
+}
+console.log("Res : ", ArraysEx.prototype.sortAscending([2, 6, 3, 8, 7, 4, 5]));
+console.log("Res : ", ArraysEx.prototype.sortDescending([2, 6, 3, 8, 7, 4, 5]));

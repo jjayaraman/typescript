@@ -29,6 +29,10 @@ class ArraysEx {
     return array;
   }
 
+  hello() {
+    console.log('hello..');
+    
+  }
 }
 
 console.log("Res : ", ArraysEx.prototype.sortAscending([2, 6, 3, 8, 7, 4, 5]));
