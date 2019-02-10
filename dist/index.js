@@ -1,6 +1,11 @@
+"use strict";
+/**
+ * Arrays algorithims
+ *
+ *
+ */
 var ArraysEx = /** @class */ (function () {
     function ArraysEx() {
-        this.age = [2, 6, 3, 8, 7, 4, 5];
     }
     ArraysEx.prototype.sortAscending = function (array) {
         for (var i = 0; i < array.length; i++) {
@@ -23,6 +28,9 @@ var ArraysEx = /** @class */ (function () {
                 }
         }
         return array;
+    };
+    ArraysEx.prototype.test = function () {
+        console.log('test..');
     };
     return ArraysEx;
 }());
