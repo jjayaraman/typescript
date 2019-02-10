@@ -31,6 +31,10 @@ class ArraysEx {
 
   hello() {
     console.log('hello..');
+  }
+  
+  test() {
+    console.log('test..');
     
   }
 }
