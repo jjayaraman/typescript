@@ -1,21 +1,16 @@
 class StringDash {
+  input = "13566";
 
-    numbers = [3,2]
-    //,'6','4','7','8'];
-
-    applyDash() {
-
-        this.numbers.forEach(n => {
-            if(n % 2 === 0) {
-                const index = this.numbers.indexOf(n);
-                this.numbers.fill(0, index, index+1);
-            }
-        });
-        console.log(this.numbers);
-        
-    
-    }
-    
+  applyDash() {
+    let numbers = this.input.split("");
+    numbers.forEach(n => {
+      if (parseInt(n) % 2 === 0) {
+        const index = numbers.indexOf(n);
+        numbers.fill("-", index, index + 1);
+      }
+    });
+    console.log(numbers);
+  }
 }
 
-StringDash.prototype.applyDash()
+StringDash.prototype.applyDash();
