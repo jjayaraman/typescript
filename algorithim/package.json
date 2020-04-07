@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "light-server": "^2.6.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.10.2"
   }
 }
